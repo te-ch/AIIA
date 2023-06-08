@@ -1,0 +1,8 @@
+[theme] 
+base="dark"  
+
+primaryColor = "#0a5ba4"   # Teal blue
+backgroundColor = "#16162d"   # Dark blue
+secondaryBackgroundColor = "#1f1f38"  # Slightly lighter dark blue
+textColor = "#d0ebff"        # Light blue
+
