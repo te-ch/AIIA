@@ -14,7 +14,10 @@ load_dotenv()
 # Set org ID and API key
 if 'api_key' not in st.session_state : 
     st.session_state['api_key'] = os.getenv("ANTHROPIC_API_KEY")
+    if not st.session_state['api_key'] : 
+        st.session_state['api_key'] = st.secrets['ANTHROPIC_API_KEY']
     anthropic_client = anthropic.Client(st.session_state['api_key'])
+
 
 #Initialise debug logs
 logfile = 'logs.txt'
